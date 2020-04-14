@@ -5,7 +5,7 @@ chrome.browserAction.onClicked.addListener(function (tab) {
         let url = tabs[0].url
         const matches = url.match(/^https?\:\/\/([^\/?#]+)(?:[\/?#]|$)/i)
         return chrome.tabs.create({ 'url': matches[0] + devSuffix })
-    });
-});
+    })
+})
 
 
