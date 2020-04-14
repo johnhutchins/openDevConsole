@@ -3,8 +3,9 @@ const devSuffix = '/_ui/common/apex/debug/ApexCSIPage'
 chrome.browserAction.onClicked.addListener(function (tab) {
     chrome.tabs.query({ active: true, lastFocusedWindow: true }, tabs => {
         let url = tabs[0].url
-        let n = url.split(window.location.host)[0]
-        return chrome.tabs.create({ 'url': n + devSuffix })
+        const matches = url.match(/^https?\:\/\/([^\/?#]+)(?:[\/?#]|$)/i);
+        window.alert(matches[0])
+        return chrome.tabs.create({ 'url': matches[0] + devSuffix })
     });
 });
 
