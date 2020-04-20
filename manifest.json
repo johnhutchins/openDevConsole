@@ -16,5 +16,15 @@
     ],
     "browser_action": {
         "default_icon": "img.png"
+    },
+    "commands": {
+        "_execute_browser_action": {
+            "suggested_key": {
+                "windows": "Ctrl+Shift+Y",
+                "mac": "Command+Shift+Y",
+                "chromeos": "Ctrl+Shift+Y",
+                "linux": "Ctrl+Shift+Y"
+            }
+        }
     }
 }
