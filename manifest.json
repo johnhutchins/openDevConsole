@@ -1,6 +1,6 @@
 {
     "name": "Open Dev Console",
-    "version": "1.0",
+    "version": "2.1",
     "manifest_version": 2,
     "description": "Opens dev console with current url",
     "background": {
