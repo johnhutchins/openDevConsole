@@ -7,7 +7,3 @@ chrome.browserAction.onClicked.addListener(function (tab) {
         return chrome.tabs.create({ 'url': matches[0] + devSuffix })
     })
 })
-
-chrome.commands.onCommand.addListener(function (command) {
-    console.log('Command:', command);
-});
