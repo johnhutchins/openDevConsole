@@ -1,8 +1,8 @@
 {
-    "name": "Open Dev Console",
+    "name": "Open Salesforce Develoer Console",
     "version": "2.1",
     "manifest_version": 2,
-    "description": "Opens dev console with current url",
+    "description": "Opens the Salesforce developer console from your currently opened Org",
     "background": {
         "persistent": false,
         "scripts": [
